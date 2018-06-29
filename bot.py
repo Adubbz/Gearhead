@@ -126,7 +126,7 @@ async def auto_update_check():
         try:
             await update()
         except Exception as e:
-            print('auto_update_check: An error ocurred: %s'.format(str(e)))
+            print('auto_update_check: An error ocurred: {}'.format(str(e)))
             
         await asyncio.sleep(update_frequency) # Update every 10 minutes
 
@@ -140,7 +140,7 @@ class InfoCheck:
         try:
             await update()
         except Exception as e:
-            print('update_command: An error ocurred: %s'.format(str(e)))
+            print('update_command: An error ocurred: {}'.format(str(e)))
 
     @commands.has_any_role('Owner', 'Data admin')
     async def terminate(self):
