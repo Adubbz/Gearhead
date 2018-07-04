@@ -108,7 +108,7 @@ async def update():
     print('Checking for updates...')
 
     channel = discord.utils.get(bot.get_all_channels(), name='information-submission')
-    updates = get_updates(['NSW-BigBlueBox', 'NSW-HR'])
+    updates = get_updates(['NSW-BigBlueBox', 'NSW-HR', 'NSW-LiGHTFORCE'])
 
     if not updates:
         print('No updates found.')
